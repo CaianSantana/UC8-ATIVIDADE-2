@@ -5,9 +5,13 @@ let participantes = ["João","Júlia","Carlos"]
 if (data === "22/2/2023"){
     console.log('A data é válida. Prosseguindo com o cadastro.')
     if (idade >= 18){
-        console.log('Idade válida. Prosseguindo com o cadastro')
+        console.log('Idade válida. Prosseguindo com o cadastro.')
         if (participantes.length<100){
             console.log("Parabéns! Você concluiu a inscrição.")
+            console.log('Participantes:')
+            for(i = 0; i < participantes.length; i++) {
+                console.log(participantes[i])
+            }
         }else{
             console.log("Desculpe, o número de inscrições atingiu seu limite.")
         }
